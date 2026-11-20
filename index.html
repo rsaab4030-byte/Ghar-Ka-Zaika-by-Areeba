@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4A230D" />
+  <title>Ghar Ka Zaika by Areeba — Rice Menu</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="icon.svg" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="menu-sheet">
+    <header class="hero">
+      <div class="hero-top-actions">
+        <span class="hero-badge">Homemade Fresh & Hygienic</span>
+        <button id="installAppBtn" class="install-btn" type="button" title="Install App / Add Shortcut">
+          📲 Add Shortcut
+        </button>
+      </div>
+      <h1>Ghar Ka Zaika</h1>
+      <div class="subtitle">by Areeba</div>
+      <div class="menu-divider">
+        <span class="line"></span>
+        <span>Rice Menu</span>
+        <span class="line"></span>
+      </div>
+    </header>
+
+    <div class="highlights-strip">
+      <span class="pill">✨ Customized Orders Available!</span>
+      <span class="pill">🛵 Delivery All Karachi</span>
+      <span class="pill">📞 WhatsApp: 03142011627</span>
+    </div>
+
+    <section class="menu-list" id="menuList"></section>
+
+    <div class="custom-note-box">
+      <label for="orderNote">📝 Customized Order / Address Note (Optional):</label>
+      <input type="text" id="orderNote" placeholder="e.g., Extra raita, spicy level, or your Karachi delivery area..." />
+    </div>
+
+    <footer class="footer-banner">
+      <h3>Customized Orders Available!</h3>
+      <p>Order on WhatsApp <strong>03142011627</strong> &bull; <strong>Delivery All Karachi</strong></p>
+    </footer>
+  </main>
+
+  <div class="sticky-bar">
+    <div class="order-summary-text">
+      <small id="itemCountLabel">0 Items Selected</small>
+      <strong id="totalPriceLabel">Total: 0 PKR</strong>
+    </div>
+    <button class="wa-btn" id="whatsappOrderBtn" type="button">
+      <span>Order on WhatsApp</span>
+    </button>
+  </div>
+
+  <!-- Shortcut / Install Help Modal for iOS / Manual Add to Home Screen -->
+  <div id="shortcutModal" class="modal-overlay" hidden>
+    <div class="modal-card">
+      <h3>📲 Add to Home Screen (Shortcut)</h3>
+      <p>Is menu ko apne phone ki screen par app ki tarah lagane ke liye:</p>
+      <ol>
+        <li>Browser ke upar ya neeche <strong>Menu (⋮)</strong> ya <strong>Share</strong> button dabayein.</li>
+        <li><strong>"Add to Home screen"</strong> ya <strong>"Install App"</strong> par click karein.</li>
+      </ol>
+      <button id="closeModalBtn" class="modal-close-btn" type="button">Samajh Aa Gaya</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

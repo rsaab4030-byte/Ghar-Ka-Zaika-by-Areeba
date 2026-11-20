@@ -1,0 +1,18 @@
+{
+  "name": "Ghar Ka Zaika by Areeba — Rice Menu",
+  "short_name": "Ghar Ka Zaika",
+  "description": "Homemade Rice Menu & Direct WhatsApp Ordering by Areeba — Delivery All Karachi",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#3B1E0D",
+  "theme_color": "#4A230D",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
